@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- Profile/User icon - inactive (gray) -->
+  <g fill="none" stroke="#888888" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Head circle -->
+    <circle cx="12" cy="8" r="4"/>
+    <!-- Body arc -->
+    <path d="M4 21 C4 16.6 7.6 13 12 13 C16.4 13 20 16.6 20 21"/>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>BASED BLOCKS</title>
+
+  <meta name="description" content="A local block puzzle. Place shapes, clear lines, and beat your best score." />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preload" href="/assets/fonts/orbitron-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+  <style>
+    :root {
+      --sat: env(safe-area-inset-top, 0px);
+      --sab: env(safe-area-inset-bottom, 0px);
+      --sal: env(safe-area-inset-left, 0px);
+      --sar: env(safe-area-inset-right, 0px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      background-color: #0a0a0f;
+      overflow: hidden;
+      touch-action: none;
+    }
+
+    #game-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #game-container canvas {
+      display: block !important;
+      margin: 0 auto !important;
+      image-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Fullscreen mode - fixed container for stable WebView sizing */
+    body.fullscreen {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    body.fullscreen #game-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      width: 100dvw;
+      height: 100vh;
+      height: 100dvh;
+      transform: none;
+      overflow: hidden;
+    }
+
+    /* Let Phaser control canvas sizing - don't force stretch */
+    body.fullscreen #game-container canvas {
+      display: block !important;
+      /* Remove forced 100% - let Phaser handle dimensions */
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

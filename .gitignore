@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*
+!.env.example
+
+# Claude Code local settings
+.claude/
+
+# Windows special files
+nul
+
+.vercel
+.env*.local
+
+# Unused audio archives
+public/assets/sounds/downloads/
+public/assets/sounds/candidates/
+assets/sounds/downloads/
+assets/sounds/candidates/
+SAVEmp3/
+
+# Foundry / Solidity local artifacts and dependencies
+contracts/broadcast/
+contracts/broadcast/**
+contracts/cache/
+contracts/out/
+contracts/lib/
+contracts/lib/**
+
+# Private tooling, credentials, and exports
+.codex/
+.agents/
+.playwright-mcp/
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.bundle
+*.dump
+*.sqlite
+*.sqlite3
+*.bak

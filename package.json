@@ -1,0 +1,30 @@
+{
+  "name": "block-puzzle-game",
+  "version": "1.0.0",
+  "description": "A standalone local block puzzle game with no external services.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "check:publication": "node scripts/check-publication.mjs",
+    "check:offline": "node scripts/check-offline.mjs"
+  },
+  "keywords": [
+    "phaser",
+    "game",
+    "puzzle",
+    "block-blast"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "vitest": "^4.0.17"
+  }
+}

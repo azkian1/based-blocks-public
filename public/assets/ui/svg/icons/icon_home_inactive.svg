@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- Home icon - inactive (gray) -->
+  <path d="M12 3 L3 10 L3 21 L9 21 L9 15 L15 15 L15 21 L21 21 L21 10 Z"
+        fill="none" stroke="#888888" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

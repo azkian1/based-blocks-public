@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <defs>
+    <filter id="glow-hover" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background fill - brighter on hover -->
+  <rect x="4" y="4" width="192" height="42" rx="8" ry="8"
+        fill="#0d1b2a" fill-opacity="0.25"/>
+
+  <!-- Outer glow layer 2 - stronger -->
+  <rect x="0" y="0" width="200" height="50" rx="10" ry="10"
+        fill="none" stroke="#00ffff" stroke-width="1.5" stroke-opacity="0.2"/>
+
+  <!-- Outer glow layer 1 - stronger -->
+  <rect x="2" y="2" width="196" height="46" rx="9" ry="9"
+        fill="none" stroke="#00ffff" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Main border - full opacity -->
+  <rect x="4" y="4" width="192" height="42" rx="8" ry="8"
+        fill="none" stroke="#00ffff" stroke-width="2" stroke-opacity="1"
+        filter="url(#glow-hover)"/>
+</svg>

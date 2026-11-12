@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Profile/User icon - active (cyan with glow) -->
+  <g fill="none" stroke="#00ffff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+     filter="url(#glow)">
+    <!-- Head circle -->
+    <circle cx="12" cy="8" r="4"/>
+    <!-- Body arc -->
+    <path d="M4 21 C4 16.6 7.6 13 12 13 C16.4 13 20 16.6 20 21"/>
+  </g>
+</svg>
